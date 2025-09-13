@@ -6,17 +6,14 @@ How to Replace Photos in GitHub (Browser Only)
 Go to https://github.com/AlphaBeare/NelsonstruckRepair-Images
 Make sure you are signed in with the GitHub account that was added as a collaborator (look at the top-right of the page; it should show your profile picture).
 
-
 2. Locate the existing photo
 
 In the repository file list, navigate through the folders until you find the photo you want to replace.
-Example: if the photo is stored in work/truck.jpg, click on the work folder, then click truck.jpg.
-
+Example: if the photo is stored in work/1.jpg, click on the work folder, then click 1.jpg.
 
 3. Upload the replacement file
 
 There are two methods for replacing:
-
 Method A: Overwrite by uploading into the same folder
 
 Navigate to the folder that contains the file (not the file itself, but the folder view).
@@ -36,6 +33,7 @@ Now go back to the folder, click Add file → Upload files, and upload the new v
 👉 Both methods end up with the same result; Method A is faster.
 
 4. Update .txt file
+   
  the .txt file will need updated to match the photo numbers.
  this way the correct captions go with the correct photos.
  the photo wont be picked up if its not present in the.txt file although a caption is not 100% required as there is a default.
@@ -50,7 +48,7 @@ Select Commit directly to the main branch (since you’re a collaborator, you’
 If you want to stage changes for review, you can instead select Create a new branch and make a pull request. But for direct replacements, main branch is fine.
 Click the Commit changes button.
 
-6. Verify the replacement
+7. Verify the replacement
 
 Back in the repository, navigate to the file again and click it.
 The preview will show the new image.
@@ -58,7 +56,7 @@ If it still shows the old one, refresh the page with Ctrl+Shift+R (hard reload) 
 To double-check, click on the History button (clock icon in the file’s top right). You should see your commit listed as the most recent change.
 Example: “Replace 1.jpg with updated photo — committed by [your username]”.
 
-7. Handle caching (important if the file is used on a live site)
+8. Handle caching (important if the file is used on a live site)
 
 GitHub’s raw file URLs (raw.githubusercontent.com/...) and GitHub Pages may cache old versions.
 If your live website or embed still shows the old photo:
